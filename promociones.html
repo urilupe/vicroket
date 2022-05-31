@@ -1,0 +1,205 @@
+{% extends 'layout.html' %}
+{% block title %} El amor a tu perro {% endblock %}
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Vicroket </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/"><i class="fas fa-house-user"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactanos">Contactanos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Catalogo
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+              <li><a class="dropdown-item" href="sucursales">Sucursal</a></li>
+              <li><hr class="dropdown-divider">Otros</li>
+              <li><a class="dropdown-item" href="promociones">Más sobre el producto</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link" href="Producto">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Iniciar Sesión</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<body>
+  <div class="home">
+    <div >
+      <div class="container">
+        <h2 class="subtitle">Nuestro producto 
+          <span class="point">.</span></h2>
+        <p class="copy__section">Cuida el bienestar de tu perro y demuestrale tu amor.</p>
+      </div>
+
+      </article>
+      <section class="projects__container">
+        <div>
+          <h2 class="subtitle">¿Qué es un complemento alimenticio?
+          <span class="point"></span></h2>
+          <div class="unic">
+           <h4>Es un producto que contribuye a la nutrición diaria y puede o no aumentar el contenido energético de la ración diaria administrada. Estos suplementos están pensados para ser mezclados con otros componentes alimenticios para formar un alimento completo. 
+          Muchas veces utilizamos los complementos alimenticios como premios o snacks, lo que favorece el vínculo entre el animal y el dueño. 
+          </h4> 
+          </div>
+          <div class="imag">
+            <img src="{{ url_for('static', filename='img/probiotic.png') }}" alt="">
+          </div>
+          <div class="unic">
+            <h2 class="subtitle">¿Qué Ofrecemos?
+            <span class="point"></span></h2>
+          <h4> Vicroket ofrece una gama de productos focalizados en mejorar la digestión de los alimentos, así como crear una flora intestinal fortalecida a partir de la administración de probióticos, pero estos, ¿qué son? Los probióticos son definidos como microorganismos vivos que confieren efectos beneficiosos en la salud del hospedero al que se le administran en las cantidades adecuadas.
+          </h4>
+          </div>
+          <div class="unic">
+            <h4>Algunos de estos efectos beneficiosos son: 
+              La producción de sustancias antimicrobianas y de esta forma inhibir el crecimiento de los microorganismos patógenos. <br> 
+              -Regulan la inmunidad y su mecanismo de acción, así como su metabolismo. <br>
+              -Equilibrio de la flora intestinal.<br>
+              -Apoyo en la digestión y aporte en cuadros diarreicos, de intolerancia a la lactosa, entre otros beneficios.<br> 
+              Nuestra fórmula principal utiliza el Kéfir como fuente principal de probióticos; el Kéfir es leche fermentada rica en bacterias ácido lácticas, y levaduras que aportan grandes beneficios en el tracto intestinal, además contiene altos niveles de vitamina B12, calcio, magnesio, biotina entre otros. Y si no fuera poco se puede realizar a partir de cualquier tipo de leche. 
+              </h4>
+              <img src="{{ url_for('static', filename='img/logo.png') }}">
+          </div>
+        </div>
+        
+
+      </section>
+      <div class="FyV2">
+        <h2 class="subtitle">Guía nutrimental Beneficios.
+          <span class="point"></span></h2>
+          La ventaja de nuestro producto aparte de ser accesible y económico contiene un contenido nutrimental muy fuerte en cuestión de los 
+          contenidos que tiene nuestro producto, teniendo la capacidad nutrimental suficiente 
+          para poder lograr cumplir con el objetivo del proyecto, por ejemplo:<br>
+          •	Producto 1. Esta contiene gran contenido de omega 3 y 6, así como vitamina E, vitamina A y bastante fibra, aparte de que está basado de kéfir. Esto para que el perro o el cachorro tuviera las vitaminas suficientes para poder mantenerse sano a través de su vida, pero de igual manera aprovechando y llevando una dieta para que tenga buena digestión.<br>
+          •	Producto 2. La implementación de un producto llamado pos biótico que por lo cual contiene fibras orgánicas de consumo directo, esto significa que el organismo del animal no tiene que transformar ningún nutriente y pueda absorberlo de manera directa para obtener un plus en su alimentación para mantener un plus en su alimentación y tener una calidad de vida optima en su día a día.<br>
+          es un complemento que puede integrarse dentro de la comida o bebida del animal, por lo cual además de ser un complemento puede adherirse a la alimentación del perro y además de esto puede administrarse de la manera más fácil y eficaz posible para cumplir con el objetivo dado .
+        </div>
+        
+        <div class="nutri">
+          <img src="{{ url_for('static', filename='img/nutrimentos.png') }}">
+        </div>
+        
+      <div class="FyV">
+        <h2 class="subtitle">Frutas y Verduras que Puede consumir tu Perro
+          <span class="point"></span></h2>
+        <img src="{{ url_for('static', filename='img/FrutayV.png') }}">
+      </div>
+      
+    </div>
+  </div>
+
+
+</body>
+ 
+<footer class="piepagina">
+    <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+  
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+  
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+  
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+  
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+  
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+  
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+       
+    </section>
+    <!-- Section: Text -->
+  
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer --> 
+  </footer>
+  </div>
+  {% endblock %}

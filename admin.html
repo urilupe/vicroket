@@ -1,0 +1,212 @@
+{% extends 'layout.html' %}
+{% block title %} El amor a tu perro {% endblock %}
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Vicroket </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/"><i class="fas fa-house-user"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Salir</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Catalogo
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="nav-link" href="/Producto">Productos</a></li>
+              <li><a class="dropdown-item" href="sucursales">Sucursales</a></li>
+              <li><hr class="dropdown-divider">Otros</li>
+              <li><a class="dropdown-item" href="promociones">Más sobre el producto</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">{{ session['nombreu'] }}</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<div class="admin">
+<div class="contenedor">
+  <header class="encabezado">
+    <h3 class="kk"> Empezemos tu compra!! </h3>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{ url_for('static', filename='img/per1.jpg') }}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/per2.jpg') }}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/per3.jpg') }}" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <main class="contenido">
+    <h2>Contenido</h2>
+  <h3>Te presentamos todas nuestras opciones paraque conozcas más acerca de nosotros.</h3>
+  </main>
+  <div class="card tarjeta1">
+    <img src="{{ url_for('static', filename='img/cardp1.jpg') }}" alt="" class="card-img-top">
+    <div class="card-body">
+      <h4 class="card-title">Acerca del Producto</h4>
+      <p class="card-text">Aquí podras conocer con que elaboramos nuestro producto, ademas de datos que podrian ser de tu agrado sobre tu perro</p>
+      <a href="promociones" class="btn btn-primary"> Conoce Más</a>
+    </div>
+    <p></p>
+  </div>
+
+  <div class="card tarjeta3">
+    <img src="{{ url_for('static', filename='img/cardp2.jpg') }}" alt="" class="card-img-top">
+    <div class="card-body">
+      <h4 class="card-title">Contactanos </h4>
+       <p>Ponte en contacto con nostros y te resolveremos cualquier duda o aclaración.</p>
+      <a href="" class="btn btn-primary">Contactar</a>
+    </div>
+   
+  </div>
+
+  <div class="card tarjeta2">
+    <img src="{{ url_for('static', filename= 'img/product.png') }}" alt="" class="card-img-top">
+    <div class="card-body">
+      <h4 class="card-title">Producto.</h4>
+      <p class="card-text">Podras Ver los Productos de calidad que Ofrecemos para tu perro, además de escoger el que más te guste. </p>
+      <a href="" class="btn btn-primary">Ver Productos </a>
+    </div>
+    <p></p>
+  </div>
+
+  <div class="card tarjeta4">
+    <img src="{{ url_for('static', filename= 'img/cardp4.jpg') }}" alt="" class="card-img-top">
+    <div class="card-body">
+      <h4 class="card-title">Sucursales</h4>
+      <p class="card-text">Busca cual es la distribuidora mas cercana a tu Domicilio</p>
+      <a href="" class="btn btn-primary">Ver Sucursales</a>
+    </div>
+    
+  </div>
+</div>
+</div>
+  <footer class="piepagina">
+    <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+       
+    </section>
+    <!-- Section: Text -->
+    
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer --> 
+  </footer>
+
+{% endblock %}

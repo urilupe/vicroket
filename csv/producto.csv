@@ -1,0 +1,9 @@
+id producto,id proveedor,id usurio,nombrep,descripcionp,nombreimg,precio
+1,12,1,Café Americano,Grande,,45
+2,124,2,Café Expres,Grande,,45
+3,235,3,Moka,Grande,,45
+4,567,4,Fappe de oreo,Grande,,45
+5,3,5,Pastel de Moka,Chico,,30
+6,567,6,Red velbet,Chico,,30
+7,546,7,Pastel de vainilla,Chico,,30
+8,547,8,Malteada,Chico,,30

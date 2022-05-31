@@ -1,0 +1,167 @@
+{% extends 'layout.html' %}
+{% block title %} El amor a tu perro {% endblock %}
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Vicroket </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/"><i class="fas fa-house-user"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactanos">Contactanos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Catalogo
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+              <li><a class="dropdown-item" href="sucursales">Sucursal</a></li>
+              <li><hr class="dropdown-divider">Otros</li>
+              <li><a class="dropdown-item" href="promociones">Más sobre el producto</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link" href="Producto">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Iniciar Sesión</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <div class="home contac">
+        <h2 class="subtitle">Puntos de Venta <span class="point">.</span></h2>
+          <p class="copy__section">Contamos con el apoyo de 2 clinicas veterinarias por el momento, ubicadas en Guadalajara y Tonala centro</p>
+          <div >
+        <div class="contac">
+        <div class="testimony-container">
+            <div class="testimony__card efecto">
+                <img src="{{ url_for('static', filename='img/trabajador.png') }}" class="testimony__img" ></a>
+                    <div class="testimony__text">
+                        <h3 class="testimony__title">Veterinario Axel Fernandez</h3>
+                        <h4>Numero telefonico: 3313250835<br>
+                            Correo electronico: vetaxel@gmail.com<br>
+                            Domicilio: Guadalajara Col. Hermosa Provincia, Av. San Pablo #2006</h4>
+                    </div>
+            </div>
+        
+        <div class="testimony__card efecto">
+        <img src="{{ url_for('static', filename='img/secretaria.png') }}" class="testimony__img"></a>
+            <div class="testimony__text">
+                <h3 class="testimony__title">Fani Marquez</h3>
+                        <h4>Numero telefonico: 3314163308<br>
+                            Correo electronico: vetfani@gmail.com<br>
+                            Domicilio: Tonala Centro, Av. Tonaltecas #3023</h4>
+            </div>
+        </div>
+        
+        </div>
+        </div>
+    </div>
+    </div>
+  <footer class="piepagina">
+    <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+  
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+  
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+  
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+  
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+  
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+  
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+       
+    </section>
+    <!-- Section: Text -->
+  
+  <!-- Grid container -->
+  
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer --> 
+  </footer>
+  {% endblock %}

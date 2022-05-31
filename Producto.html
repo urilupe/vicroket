@@ -1,0 +1,184 @@
+{% extends 'layout.html' %}
+{% block title %} El amor a tu perro {% endblock %}
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Vicroket </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/"><i class="fas fa-house-user"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactanos">Contactanos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Catalogo
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+              <li><a class="dropdown-item" href="sucursal">Sucursal</a></li>
+              <li><hr class="dropdown-divider">Otros</li>
+              <li><a class="dropdown-item" href="promociones">Más sobre el producto</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link" href="Producto">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Iniciar Sesión</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<body>
+  <div class="home">
+    <div class="container">
+      <h2 class="subtitle">Productos <span class="point">.</span></h2>
+      <p class="copy__section">Las Mejores Productos de Calidad</p>
+      <div >
+      <article class="container-cards">
+        <div class="card2 caja">
+          <img src="{{ url_for('static', filename='img/costal.jpeg') }}" class="card__img">
+          <div class="cards__text">
+            <p class="card__list">Croquetas 1kg</p>
+            
+            <p>POR SOLO &#36;70.00</p></p>
+            <a href="contactanos" class="card__button">Consultar sitios</a>
+          </div>
+          </div> 
+        <div class="card2 caja">
+          <img src="{{ url_for('static', filename='img/logo.png') }}" class="card__img">
+          <div class="cards__text">
+            <p class="card__list">Formula 1 (kefir)<br aling="center" > 100ml</p>
+
+
+        
+            <p>-POR SOLO &#36;50.00</p>
+            <a href="contactanos" class="card__button">Consultar sitios</a>
+          </div>
+          </div> 
+
+          <div class="card2 caja">
+            <img src="{{ url_for('static', filename='img/car5.jpg') }}" class="card__img">
+            <div class="cards__text">
+              <p class="card__list">Lugares Donde encontrar<br> el Producto</p>
+          
+              <p>El precio puede variar de acuerdo al distribuidor</p>
+              <a href="sucursales" class="card__button">Buscar sitios</a>
+            </div>
+            </div>
+        
+      </article>
+
+    </div>
+
+
+    </div>
+  </div>
+</body>
+ <footer class="piepagina">
+    <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+  
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+  
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+  
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+  
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+  
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+  
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+       
+    </section>
+    <!-- Section: Text -->
+  
+  <!-- Grid container -->
+  
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer --> 
+  </footer>
+  </div>
+  {% endblock %}
